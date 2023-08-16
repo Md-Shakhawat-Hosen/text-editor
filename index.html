@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://kit.fontawesome.com/4ad39c9065.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="max-w-screen-xl mx-auto px-10 bg-slate-300 py-10">
+        <h1 class="text-center text-4xl font-bold">Text Editor</h1>
+        <hr class="w-full h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+        <div class="flex flex-col md:flex-row lg:flex-row justify-around items-center ">
+             <div class="space-x-5 mb-4">
+            <i id="bold" class="bold fa-solid fa-b"></i>
+            <i id="italic" class="bold fa-solid fa-italic"></i>
+            <i id="underline" class="bold fa-solid fa-underline"></i>
+         </div>
+         <div class="space-x-5 mb-5">
+            <i id="align-left" class="bold fa-solid fa-align-left"></i>
+            <i id="align-center" class="bold fa-solid fa-align-center"></i>
+            <i id="align-right" class="bold fa-solid fa-align-right"></i>
+            <i id="align-justify" class="bold fa-solid fa-align-justify"></i>
+         </div>
+
+         <div class="space-x-3 flex items-center">
+             <div>
+                <input id="input-number" type="number" min="1" max="100" placeholder="17" name="">
+            <input id="color-picker" type="color" value="#ff0000" />
+             </div>
+         </div>
+        </div>
+<hr class="w-full h-1 mx-auto my-1 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+        <textarea id="text-area" class="w-full mt-5 p-2 h-[500px]" name="" cols="30" rows="10"></textarea>
+        
+    </section>
+
+    <script src="./dom.js"></script>
+</body>
+</html>
