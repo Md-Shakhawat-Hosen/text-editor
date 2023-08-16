@@ -184,23 +184,21 @@ document.getElementById('align-justify').addEventListener('click',function(){
     
      
 
-  document.getElementById('input-number').addEventListener('keyup',function(event){
-       const boldA = document.getElementById("input-number");
 
-       const textA = document.getElementById("text-area");
 
-        textA.style.fontSize = `${event.target.value}px`
+ const fontSizeInput = document.getElementById("input-number");
+ const textArea = document.getElementById('text-area');
 
-  })
+ fontSizeInput.addEventListener('input',function(){
+    const newSize = fontSizeInput.value + 'px';
+    textArea.style.fontSize = newSize;
+ })
+
    
 
-  document.getElementById("color-picker").addEventListener('click',function(event){
-    
 
-     const textA = document.getElementById("text-area");
-
-     textA.style.color = event.target.value;
-  })
-
-
+      let textA = document.getElementById("text-area");
+  function changeColor(event) {
+       textA.style.color = event.target.value;  
+  }
 
